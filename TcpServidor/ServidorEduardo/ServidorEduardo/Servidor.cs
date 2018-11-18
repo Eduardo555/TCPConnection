@@ -19,9 +19,7 @@ namespace ServidorEduardo
 		public Servidor()
 		{
 			// Construtuor, inicia o sistema de comunicacao.
-			IniciarServidor();
-			EstabeleceConexao();
-			FecharConexao();
+			
 		}
 
 
@@ -30,7 +28,7 @@ namespace ServidorEduardo
 		private BinaryWriter escrita;
 		private BinaryReader leitura;
 
-		private void EstabeleceConexao()
+		public string EstabeleceConexao()
 		{
 			// Estabelece a conexao com o cliente.
 			// Realizando o aceite de conexao.
@@ -39,18 +37,13 @@ namespace ServidorEduardo
 			// Cria Local em memoria para escrever as mensagens.
 			socketScreen = new NetworkStream(conexao);
 
-			// Esreve a mensagem.
-			//escrita = new BinaryWriter(socketScreen);
-			//leitura = new BinaryReader(socketScreen);
-			//MessageBox.Show("Escrita: " + escrita.ToString() + " Leitura:" + leitura.ToString());
-
 			byte[] buffer = new byte[conexao.ReceiveBufferSize];
 			int data = socketScreen.Read(buffer, 0, conexao.ReceiveBufferSize);
 			string ch = Encoding.Unicode.GetString(buffer, 0, data);
-			MessageBox.Show("Message Recived" + ch);
+			return ch;
 		}
 
-		private void IniciarServidor()
+		public void IniciarServidor()
 		{
 			// Inicia o servidor.
 			try
@@ -63,7 +56,7 @@ namespace ServidorEduardo
 			}
 
 		}
-		private void FecharConexao()
+		public void FecharConexao()
 		{
 			// Encera a conexao.
 			try
