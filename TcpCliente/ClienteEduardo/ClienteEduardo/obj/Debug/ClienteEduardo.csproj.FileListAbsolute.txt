@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\bin\Debug\ClienteEduardo.exe.config
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\bin\Debug\ClienteEduardo.exe
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\bin\Debug\ClienteEduardo.pdb
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.csprojAssemblyReference.cache
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.Form1.resources
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.Properties.Resources.resources
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.csproj.GenerateResource.cache
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.exe
+C:\Users\User\Documents\Programacao\GitHub\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.pdb
