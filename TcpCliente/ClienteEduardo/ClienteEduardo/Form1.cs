@@ -17,9 +17,21 @@ namespace ClienteEduardo
 			InitializeComponent();
 		}
 
+		Cliente cliente = new Cliente();
+
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Cliente cliente = new Cliente();
+			cliente.EnviarMensagem(DateTime.Now + " :: " + txtMensagem.Text);
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			cliente.ConectarServidor(txtIp.Text);
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			cliente.FecharConexao();
 		}
 	}
 }

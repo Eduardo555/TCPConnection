@@ -14,13 +14,12 @@ namespace ClienteEduardo
 
 		public Cliente()
 		{
-			ConectarServidor();
-			EnviarMensagem();
-			FecharConexao();
+			//ConectarServidor();
+			//EnviarMensagem();
+			//FecharConexao();
 		}
 
 		public int Porta { get; set; } = 2000;
-		public string EndIpServer { get; set; } = "192.168.0.24";
 
 		// Criar o Cliente.
 		TcpClient cliente = new TcpClient();
@@ -30,31 +29,23 @@ namespace ClienteEduardo
 		private string Mensagem = "Eureca Funciona!";
 
 		// Cria conexao com o cliente.
-		private void ConectarServidor()
+		public void ConectarServidor(string ip)
 		{
 
-			cliente.Connect(EndIpServer, Porta);
+			cliente.Connect(ip, Porta);
 		}
 
 		// Envia Mensagem para o servidor.
-		private void EnviarMensagem()
+		public void EnviarMensagem(string mensagem)
 		{
-
-			//Byte[] sendBytes = Encoding.UTF8.GetBytes("Is anybody there?");
 			saida = cliente.GetStream();
-			escreve = new BinaryWriter(saida);
-			//ler = new BinaryReader(saida);
-			//MessageBox.Show(ler.ToString());
-			//saida.Write(sendBytes, 0, sendBytes.Length);
-
-			string ch = "Mensagem";
-			byte[] message = Encoding.Unicode.GetBytes(ch);
+			escreve = new BinaryWriter(saida);		
+			byte[] message = Encoding.Unicode.GetBytes(mensagem);
 			saida.Write(message, 0, message.Length);
-
 		}
 
 		// Fecha conexao com o servidor.
-		private void FecharConexao()
+		public void FecharConexao()
 		{
 			cliente.Close();
 		}
