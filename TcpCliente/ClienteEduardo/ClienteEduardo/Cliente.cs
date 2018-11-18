@@ -40,12 +40,17 @@ namespace ClienteEduardo
 		private void EnviarMensagem()
 		{
 
-			Byte[] sendBytes = Encoding.UTF8.GetBytes("Is anybody there?");
+			//Byte[] sendBytes = Encoding.UTF8.GetBytes("Is anybody there?");
 			saida = cliente.GetStream();
 			escreve = new BinaryWriter(saida);
-			ler = new BinaryReader(saida);
+			//ler = new BinaryReader(saida);
 			//MessageBox.Show(ler.ToString());
-			saida.Write(sendBytes, 0, sendBytes.Length);
+			//saida.Write(sendBytes, 0, sendBytes.Length);
+
+			string ch = "Mensagem";
+			byte[] message = Encoding.Unicode.GetBytes(ch);
+			saida.Write(message, 0, message.Length);
+
 		}
 
 		// Fecha conexao com o servidor.

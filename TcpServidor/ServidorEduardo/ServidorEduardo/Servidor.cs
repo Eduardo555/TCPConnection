@@ -40,9 +40,14 @@ namespace ServidorEduardo
 			socketScreen = new NetworkStream(conexao);
 
 			// Esreve a mensagem.
-			escrita = new BinaryWriter(socketScreen);
-			leitura = new BinaryReader(socketScreen);
-			MessageBox.Show("Escrita: " + escrita.ToString() + " Leitura:" + leitura.ToString());
+			//escrita = new BinaryWriter(socketScreen);
+			//leitura = new BinaryReader(socketScreen);
+			//MessageBox.Show("Escrita: " + escrita.ToString() + " Leitura:" + leitura.ToString());
+
+			byte[] buffer = new byte[conexao.ReceiveBufferSize];
+			int data = socketScreen.Read(buffer, 0, conexao.ReceiveBufferSize);
+			string ch = Encoding.Unicode.GetString(buffer, 0, data);
+			MessageBox.Show("Message Recived" + ch);
 		}
 
 		private void IniciarServidor()
