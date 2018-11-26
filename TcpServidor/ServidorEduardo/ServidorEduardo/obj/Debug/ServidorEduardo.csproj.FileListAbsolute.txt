@@ -18,3 +18,7 @@ C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEdu
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\obj\Debug\ServidorEduardo.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\obj\Debug\ServidorEduardo.exe
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\obj\Debug\ServidorEduardo.pdb
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\bin\Debug\ServidorEduardo.exe.manifest
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\bin\Debug\ServidorEduardo.application
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\obj\Debug\ServidorEduardo.exe.manifest
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpServidor\ServidorEduardo\ServidorEduardo\obj\Debug\ServidorEduardo.application

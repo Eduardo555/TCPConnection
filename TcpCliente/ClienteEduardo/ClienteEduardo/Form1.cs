@@ -21,7 +21,7 @@ namespace ClienteEduardo
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			cliente.EnviarMensagem(DateTime.Now + " :: " + txtMensagem.Text);
+			cliente.EnviarMensagem(DateTime.Now + " :: " + txtMensagem.Text, txtIp.Text);
 		}
 
 		private void button2_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace ClienteEduardo
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			cliente.FecharConexao();
+			this.Dispose();
 		}
 	}
 }

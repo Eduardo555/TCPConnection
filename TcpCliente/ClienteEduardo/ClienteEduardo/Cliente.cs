@@ -31,17 +31,31 @@ namespace ClienteEduardo
 		// Cria conexao com o cliente.
 		public void ConectarServidor(string ip)
 		{
-
-			cliente.Connect(ip, Porta);
+			
 		}
 
 		// Envia Mensagem para o servidor.
-		public void EnviarMensagem(string mensagem)
+		public void EnviarMensagem(string mensagem, string ip)
 		{
-			saida = cliente.GetStream();
-			escreve = new BinaryWriter(saida);		
-			byte[] message = Encoding.Unicode.GetBytes(mensagem);
-			saida.Write(message, 0, message.Length);
+			try
+			{
+				// Cria Conexao
+				cliente = new TcpClient();
+				cliente.Connect(ip, Porta);
+
+				// Pega mensagem e envia.
+				saida = cliente.GetStream();
+				escreve = new BinaryWriter(saida);
+				byte[] message = Encoding.Unicode.GetBytes(mensagem);
+				saida.Write(message, 0, message.Length);
+
+				// Encera conexao.
+				FecharConexao();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message.ToString());
+			}
 		}
 
 		// Fecha conexao com o servidor.

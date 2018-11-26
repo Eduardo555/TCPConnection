@@ -33,7 +33,6 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtIp = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -80,16 +79,6 @@
 			this.label2.TabIndex = 4;
 			this.label2.Text = "IP do servidor";
 			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(189, 33);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(147, 23);
-			this.button2.TabIndex = 5;
-			this.button2.Text = "Estabelecer Conexão";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
 			// button3
 			// 
 			this.button3.Location = new System.Drawing.Point(284, 239);
@@ -107,7 +96,6 @@
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.ClientSize = new System.Drawing.Size(348, 274);
 			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.txtIp);
 			this.Controls.Add(this.label1);
@@ -128,7 +116,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtIp;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
 	}
 }

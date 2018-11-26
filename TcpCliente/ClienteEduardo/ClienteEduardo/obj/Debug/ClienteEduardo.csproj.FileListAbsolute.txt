@@ -18,3 +18,7 @@ C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduar
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.exe
 C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.pdb
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\bin\Debug\ClienteEduardo.exe.manifest
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\bin\Debug\ClienteEduardo.application
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.exe.manifest
+C:\Users\User\Documents\Programacao\GitHub\TCPConnection\TcpCliente\ClienteEduardo\ClienteEduardo\obj\Debug\ClienteEduardo.application

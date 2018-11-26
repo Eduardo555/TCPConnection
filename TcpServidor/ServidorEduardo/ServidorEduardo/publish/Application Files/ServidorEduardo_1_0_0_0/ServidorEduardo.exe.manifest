@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ServidorEduardo.exe" version="1.0.0.0" publicKeyToken="b27bc1806d6b1e7a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ServidorEduardo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ServidorEduardo.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto UAC
+          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
+          nó requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
+         com versões anteriores, exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServidorEduardo.exe" size="12760">
+      <assemblyIdentity name="ServidorEduardo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NlejClQChKrUYxxcmERbp3I1+vOdFz2c7ukzXSpdVPA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ServidorEduardo.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=EDUARDO-DESKTOP\User" issuerKeyHash="7730eae135b7cb4ed718ac5fbb3caebea988beef" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CXqt8TKp3hChcT0IfWicXDfOeNo81ixNYjY+dyKyFs4=</DigestValue></Reference></SignedInfo><SignatureValue>GgAYp8njvk42m7kPiUGgwo075aRUO4IZ3ECAfgl+UwsZFpZB6Fd2ADAM7EIM14lXMGsuWyf/6jn/cSKWSaUGj47EeJ9N8W0yfavwUXRJUW+Sy/g6mqCt/RpHA37LFDWbSBujnVyK8OmZ9h7PnmBu9YFs7x/FSZXTXiHLp3oRHhA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>l65FtgW260aVpL7ADxLiRsgJGNp3rQ3FJbOe4HQRg8JiRa1J5Kl5VtML+CF9nkbRmSA5bjWpwx/HeVTYwsPkkt5/99RwDzRVfNrUiAtQi3ZK8lEyajLQZIK191C33PW9/+Ubg3oWKhdzh3p1wBV2A9lCzY9UBngCQjjkDZRrUYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ce16b222773e36624d2cd63cda78ce375c9c687d083d71a110dea932f1ad7a09" Description="" Url=""><as:assemblyIdentity name="ServidorEduardo.exe" version="1.0.0.0" publicKeyToken="b27bc1806d6b1e7a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=EDUARDO-DESKTOP\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rNSdkBXnhrJXQgex8uAvUnQ19ZxYLHTLo/UEAQKA+PA=</DigestValue></Reference></SignedInfo><SignatureValue>VN+C7oQXOV7Iu1cGmW56oXud1heV91C8YhEr2zxkLwxNTL+9mIF0JK3AF0RKQkZsD0tYatlYJx7X/v9HSAtlObzsFn4FV0/SDbjJ1V6obtrWFmD6Bq3Wf0BZDIZw5jw1l2cZW/JoOgz5EuO5SHLwuy5PP78dfu8o2M2XrnOmrUQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>l65FtgW260aVpL7ADxLiRsgJGNp3rQ3FJbOe4HQRg8JiRa1J5Kl5VtML+CF9nkbRmSA5bjWpwx/HeVTYwsPkkt5/99RwDzRVfNrUiAtQi3ZK8lEyajLQZIK191C33PW9/+Ubg3oWKhdzh3p1wBV2A9lCzY9UBngCQjjkDZRrUYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQf0dHyErAPZBK9zlalX5yxTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARQBEAFUAQQBSAEQATwAtAEQARQBTAEsAVABPAFAAXABVAHMAZQByMB4XDTE4MTEyNjAwMjE1OFoXDTE5MTEyNjA2MjE1OFowMzExMC8GA1UEAx4oAEUARABVAEEAUgBEAE8ALQBEAEUAUwBLAFQATwBQAFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAl65FtgW260aVpL7ADxLiRsgJGNp3rQ3FJbOe4HQRg8JiRa1J5Kl5VtML+CF9nkbRmSA5bjWpwx/HeVTYwsPkkt5/99RwDzRVfNrUiAtQi3ZK8lEyajLQZIK191C33PW9/+Ubg3oWKhdzh3p1wBV2A9lCzY9UBngCQjjkDZRrUYUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAohdHM9/He+M90tc5M66s3crSSgSBAjbI1jpWgJNUFr5Zkh2ytT6Z935rBRiQjerWVudkFrjBSJUXdJRdUzUX12BapNElx+26sXgwVMhR4oQC54LLUjGX4I/tAAuq3TGYvG2GwnVtVOi7W/QM7+c1P1/c2x3TPZi7YGnjowha7XA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
